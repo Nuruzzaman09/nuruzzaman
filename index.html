@@ -16,10 +16,10 @@
             <div class="img"><img src="img.jpg" alt="profile-pic"></div>
             <h1 class="name">NURUZZAMAN</h1>
           </div>
-          <a href="#home" onclick="closemenu()">Home</a>
-          <a href="#skill" onclick="closemenu()">Skills</a>
-          <a href="#education" onclick="closemenu()">Education</a>
-          <a href="#contact" onclick="closemenu()" >Contact</a>
+          <a href="#home" >Home</a>
+          <a href="#skill" >Skills</a>
+          <a href="#education" >Education</a>
+          <a href="#contact"  >Contact</a>
           <a herf="#" class="cls_btn" id="close" onclick="closemenu()">&times;</a>
         </div>
         
@@ -42,7 +42,7 @@
               Learning new things is one of my hobby. </p>
             </div>
             <div>
-              <div class="title" id="skill">SILLS : </div>
+              <div class="title" id="skill">SKILLS : </div>
               <hr class="clear">
               <div class="skill">
                 <P class="disc">Technical fields those I worked...</P>
@@ -126,6 +126,7 @@
           
           <div>
             <div class = "Bit">
+              <h1><u>String to bit:</u></h1>
               <form onsubmit="stringToBit(event)" class="text">
                 <p>তোমাকে আবশ্যই শুধুমাত্র ইংরেজি শব্দ ব্যবহার করতে হবে, অন্য কোন সিম্বল ব্যবহার করা যাবে না। স্পেসের জন্য ০ (শুন্য) এবং ডটের জন্য ২৭ (সাতাশ) ধরা হয়েছে ।<br> প্রতি বর্ণের জন্য ৫ বিট করে রেজাল্ট আসবে  </p>
                 <h2>IN-PUT:</h2>
@@ -134,7 +135,19 @@
                 <button class="submit" type="submit" >SUBMIT YOUR TEXT</button>
               </form>
               <h2>OUT-PUT:</h2>
-              <textarea id="outPut"></textarea>
+              <textarea disabled id="outPut"></textarea>
+            </div>
+            <div class = "Bit">
+              <h1><u>Bit to string:</u></h1>
+              <form onsubmit="BitToString(event)" class="text">
+                <p>তোমাকে আবশ্যই শুধুমাত্র ইংরেজি ওয়ান আর জিরো ব্যবহার করতে হবে।  </p>
+                <h2>IN-PUT:</h2>
+                <textarea id="textArea2" class="textArea"></textarea> 
+                
+                <button class="submit" type="submit" >SUBMIT YOUR TEXT</button>
+              </form>
+              <h2>OUT-PUT:</h2>
+              <textarea disabled id="outPut2"></textarea>
             </div>
           </div>
           

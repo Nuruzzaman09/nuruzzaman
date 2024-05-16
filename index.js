@@ -35,5 +35,33 @@ function stringToBit(event){
         }
         bit=bit + oneByte;
 	}
+    console.log(bit);
 	document.getElementById("outPut").innerHTML = bit;
 }
+
+
+function BitToString (event){
+    event.preventDefault();
+    let text = document.getElementById("textArea2").value;
+    let bit = "";
+    
+    for(let i=0;i<text.length;i=i+5){
+        let letter = text.slice(i,i+5);
+        
+        let value = parseInt(letter,2) + 64;
+                if(value<65){
+                    bit = bit + " ";
+                }
+                else if(value>90){
+                    bit = bit + ".";
+                }
+                else{
+                    bit = bit + String.fromCharCode(value);
+                }
+        
+    }
+    console.log(bit);
+    console.log("ok");
+    document.getElementById("outPut2").innerHTML = bit;
+    
+}; 
